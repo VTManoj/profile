@@ -1,0 +1,76 @@
+.home-page {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+
+    .home-header-icon {
+        position: absolute;
+        top: -30px;
+        right: 45px;
+    }
+
+    .home-body-content {
+        .home-content-left {
+            width: 45%;
+            display: inline-block;
+            height: 100vh;
+            // background-color: lawngreen;
+            position: relative;
+
+            .photo-shadow {
+                width: 250px;
+                height: 361px;
+                background-color: rgba(255, 255, 255, 0.2392156863);
+                border-radius: 40px;
+                position: absolute;
+                left: 131px;
+                top: 160px;
+            }
+
+            .photo-container {
+                display: inline-block;
+                z-index: 9;
+                position: absolute;
+                left: 105px;
+                top: 140px;
+
+                .user-photo {
+                    width: 250px;
+                    height: 361px;
+                    border-radius: 40px;
+                }
+            }
+        }
+
+        .home-content-right {
+            width: 55%;
+            display: inline-block;
+            height: 100vh;
+            vertical-align: top;
+            color: white;
+
+            // background-color: aqua;
+            .user-name {
+                font-family: Segoe UI;
+                color: white;
+                padding-top: 135px;
+                text-align: center;
+                font-size: 80px;
+            }
+
+            .user-role {
+                text-align: center;
+                font-size: 28px;
+                color: gold;
+            }
+        }
+    }
+
+    .foooter-icon {
+        position: absolute;
+        bottom: -42px;
+        right: 0px;
+    }
+}
