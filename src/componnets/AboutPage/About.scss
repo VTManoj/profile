@@ -155,10 +155,8 @@
 
         .skills-container {
             width: calc(100% - 300px);
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
             padding-top: 30px;
+            margin: auto;
 
             .CircularProgressbar .CircularProgressbar-trail {
                 stroke: #3e3d3d;
@@ -254,23 +252,123 @@
         }
     }
 
-    .edu-and-experience{
-        .eduexp-header{
-
+    .edu-and-experience {
+        .eduexp-header {
+            text-align: center;
+            font-size: 50px;
+            padding-top: 30px;
         }
-        .eduexp content{
-            .exp-details{
-                width: 50%;
-                height: 600px;
-                display: inline-block;
-                background-color: beige;
-            }
-            .edu-details{
-                width: 50%;
-                height: 600px;
-                display: inline-block;
-                background-color: aqua;
 
+        .eduexp-content {
+            padding-top: 50px;
+
+            .exp-details {
+                width: 50%;
+                height: 600px;
+                display: inline-block;
+                // background-color: chartreuse;
+                vertical-align: top;
+
+                .exp-detail-container {
+                    width: calc(100% - 100px);
+                    padding: 25px;
+                    float: right;
+                    border-left: 1px solid;
+                    border-top: 0;
+                    border-right: 0;
+                    position: relative;
+                    border-bottom: 0;
+                    margin-bottom: 40px;
+                    padding-bottom: 10px;
+                    .work-logo-container {
+                        width: 30px;
+                        background: white;
+                        padding: 7px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -10px;
+                        left: -22px;
+                        .work-logo{
+                            width: 30px;
+                        }
+                    }
+                    .job-title {
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+
+                    .companyName-year {
+                        .company-name {
+                            font-size: 26px;
+                            padding-right: 15px;
+                        }
+
+                        .year {
+                            border: 1px solid gold;
+                            border-radius: 30px;
+                            padding: 4px;
+                            background-color: gold;
+                            font-weight: 600;
+                            color: black;
+                            width: fit-content;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+
+            .edu-details {
+                width: 50%;
+                height: 600px;
+                display: inline-block;
+
+                // background-color: chartreuse;
+                .edu-detail-container {
+                    width: calc(100% - 100px);
+                    border-left: 1px solid;
+                    border-top: 0;
+                    border-right: 0;
+                    border-bottom: 0;
+                    position: relative;
+                    margin-bottom: 40px;
+                    padding: 25px;
+                    float: right;
+                    padding-bottom: 10px;
+                    .edu-logo-container {
+                        width: 30px;
+                        background: white;
+                        padding: 7px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -10px;
+                        left: -22px;
+                        .wdu-logo{
+                            width: 30px;
+                        }
+                    }
+                    .edu-title {
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+
+                    .eduName-year {
+                        .edu-name {
+                            font-size: 26px;
+                            padding-right: 15px;
+                        }
+
+                        .edu-year {
+                            width: fit-content;
+                            border: 1px solid gold;
+                            border-radius: 30px;
+                            padding: 4px;
+                            background-color: gold;
+                            font-weight: 600;
+                            color: black;
+                            margin-top: 5px;
+                        }
+                    }
+                }
             }
         }
     }
