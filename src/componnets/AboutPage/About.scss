@@ -253,4 +253,25 @@
             }
         }
     }
+
+    .edu-and-experience{
+        .eduexp-header{
+
+        }
+        .eduexp content{
+            .exp-details{
+                width: 50%;
+                height: 600px;
+                display: inline-block;
+                background-color: beige;
+            }
+            .edu-details{
+                width: 50%;
+                height: 600px;
+                display: inline-block;
+                background-color: aqua;
+
+            }
+        }
+    }
 }

@@ -98,7 +98,7 @@ export const About = () => {
       <div className="divider"></div>
       <div className="my-skills">
         <div className="my-skills-header">
-          My Skills
+          MY SKILLS
         </div>
         <div className="skills-container">
           <div className="column-1">
@@ -137,8 +137,20 @@ export const About = () => {
               <div className="progress-bar-text">WORDPRESS</div>
             </div>
           </div>
-          <div className="divider"></div>
+        </div>
+        <div className="divider"></div>
 
+      </div>
+
+      <div className="edu-and-experience">
+        <div className="eduexp-header">EDUCATION & EXPERIENCE</div>
+        <div className="eduexp content">
+          <div className="exp-details">
+            
+          </div>
+          <div className="edu-details">
+
+          </div>
         </div>
       </div>
     </div>

@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700;900&display=swap');
 .home-page {
     position: relative;
     background-color: black;
     width: 100%;
     height: 100vh;
     overflow-y: hidden;
-
+    .home-bg-icon {
+        position: absolute;
+        left: -145px;
+        bottom: -167px;
+        .home-bg{
+            width: 915px;
+        }
+    }
     .home-header-icon {
         position: absolute;
         top: -30px;
@@ -53,7 +62,7 @@
 
             // background-color: aqua;
             .user-name {
-                font-family: Segoe UI;
+                font-family: 'Roboto', sans-serif;
                 color: white;
                 padding-top: 135px;
                 text-align: center;
@@ -64,12 +73,14 @@
                 text-align: center;
                 font-size: 28px;
                 color: gold;
+                font-family: 'Poppins', sans-serif;
             }
             .user-desc {
-                width: 500px;
+                width: 530px;
                 padding-left: 110px;
-                font-size: 20px;
+                font-size: 22px;
                 padding-top: 32px;
+                font-family: "Poppins", sans-serif;
             }
         }
     }
