@@ -99,6 +99,7 @@
                         &:hover {
                             --_i: 100%;
                             transition: .3s, background-size .3s .3s;
+                            transform: scale(1.2);
                         }
 
                         .number-text {
@@ -293,13 +294,13 @@
                         }
                     }
                     .job-title {
-                        font-size: 30px;
+                        font-size: 28px;
                         font-weight: 500;
                     }
 
                     .companyName-year {
                         .company-name {
-                            font-size: 26px;
+                            font-size: 24px;
                             padding-right: 15px;
                         }
 
@@ -347,13 +348,13 @@
                         }
                     }
                     .edu-title {
-                        font-size: 30px;
+                        font-size: 28px;
                         font-weight: 500;
                     }
 
                     .eduName-year {
                         .edu-name {
-                            font-size: 26px;
+                            font-size: 24px;
                             padding-right: 15px;
                         }
 
