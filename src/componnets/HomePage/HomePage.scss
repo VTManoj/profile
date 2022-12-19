@@ -1,24 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
 .home-page {
     position: relative;
     background-color: black;
     width: 100%;
     height: 100vh;
     overflow-y: hidden;
+
     .home-bg-icon {
         // position: absolute;
         // left: -145px;
         // bottom: -167px;
         position: relative;
-        .home-bg{
+
+        .home-bg {
             // width: 915px;
             width: 915px;
             position: absolute;
             top: -130px;
             left: -110px;
         }
+
+        .home-mobile-bg {
+            display: none;
+        }
     }
+
     .home-header-icon {
         position: absolute;
         top: -30px;
@@ -80,6 +88,7 @@
                 color: gold;
                 font-family: 'Poppins', sans-serif;
             }
+
             .user-desc {
                 width: 530px;
                 padding-left: 110px;
@@ -89,7 +98,9 @@
             }
         }
     }
-
+    .home-body-content-mobile {
+        display: none;
+    }
     .foooter-icon {
         position: absolute;
         bottom: -42px;
@@ -98,95 +109,192 @@
 }
 
 @media only screen and (max-width: 600px) {
-    home-page {
+    .home-page {
         position: relative;
         background-color: black;
         width: 100%;
         height: 100vh;
         overflow-y: hidden;
+        overflow-x: hidden;
+
         .home-bg-icon {
-            position: absolute;
-            left: -145px;
-            bottom: -167px;
-            .home-bg{
-                width: 915px;
-            }
+            display: none;
         }
+
         .home-header-icon {
-            position: absolute;
-            top: -30px;
-            right: 45px;
+            display: none;
         }
-    
+
         .home-body-content {
-            .home-content-left {
-                width: 45%;
-                display: inline-block;
-                height: 100vh;
-                // background-color: lawngreen;
+            display: none;
+        }
+
+        .home-body-content-mobile {
+            display: block;
+            .mobile-photo-container {
                 position: relative;
-    
-                .photo-shadow {
-                    width: 250px;
-                    height: 361px;
-                    background-color: rgba(255, 255, 255, 0.2392156863);
-                    border-radius: 40px;
+
+                .mob-home-bg {
                     position: absolute;
-                    left: 131px;
-                    top: 160px;
+                    left: -13px;
+                    width: 490px;
                 }
-    
-                .photo-container {
-                    display: inline-block;
-                    z-index: 9;
+
+                .mob-user-photo {
+                    width: 187px;
+                    height: 264px;
                     position: absolute;
-                    left: 105px;
-                    top: 140px;
-    
-                    .user-photo {
-                        width: 250px;
-                        height: 361px;
-                        border-radius: 40px;
-                    }
+                    top: 106px;
+                    left: 95px;
+                    border-radius: 30px;
                 }
             }
-    
-            .home-content-right {
-                width: 55%;
-                display: inline-block;
-                height: 100vh;
-                vertical-align: top;
-                color: white;
-    
-                // background-color: aqua;
-                .user-name {
-                    font-family: 'Roboto', sans-serif;
+
+            .mob-user-description {
+                padding-top: 26em;
+
+                .mob-user-name {
+                    font-family: "Roboto", sans-serif;
                     color: white;
-                    padding-top: 135px;
                     text-align: center;
-                    font-size: 80px;
+                    font-size: 40px;
                 }
-    
-                .user-role {
+
+                .mob-user-role {
                     text-align: center;
-                    font-size: 28px;
+                    font-size: 24px;
                     color: gold;
                     font-family: 'Poppins', sans-serif;
                 }
-                .user-desc {
-                    width: 530px;
-                    padding-left: 110px;
-                    font-size: 22px;
-                    padding-top: 32px;
-                    font-family: "Poppins", sans-serif;
+
+                .mob-user-desc {
+                    text-align: center;
+                    padding: 15px;
+                    font-size: 20px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 100;
+                    font-style: italic;
                 }
+                .more-more-button{
+                    text-align: center;
+                    padding-top: 10px;
+                    .more-about-me{
+                        padding: 13px 20px;
+                        background: gold;
+                        color: white;
+                        border: none;
+                        border-radius: 30px 30px 30px 0px;
+                    }
+                }
+                
             }
         }
-    
+
         .foooter-icon {
+            display: none;
             position: absolute;
             bottom: -42px;
             right: 0px;
         }
     }
-  }
+}
+
+// @media only screen and (max-width: 600px) {
+//     .home-page {
+//         position: relative;
+//         background-color: black;
+//         width: 100%;
+//         height: 100vh;
+//         overflow-y: hidden;
+
+//         .home-bg-icon {
+//             position: unset;
+//             .home-bg {
+//                 display: none;
+//                 position: unset;
+//             }
+
+//             .home-mobile-bg {
+//                 position: relative;
+//                 display: block;
+
+//                 .mobile-home-bg {
+//                     position: absolute;
+//                     width: 474px;
+//                     left: -60px;
+//                 }
+//             }
+//         }
+
+//         .home-body-content {
+//             display: none;
+//             .home-content-left {
+//                 width: unset;
+//                 display: unset;
+//                 height: unset;
+//                 position: relative;
+
+//                 .photo-shadow {
+//                     width: unset;
+//                     height: unset;
+//                     background-color: unset;
+//                     border-radius: unset;
+//                     position: unset;
+//                     left: unset;
+//                     top: unset;
+//                 }
+
+//                 .photo-container {
+//                     display: inline-block;
+//                     z-index: 9;
+//                     position: unset;
+//                     left: unset;
+//                     top: unset;
+
+//                     .user-photo {
+//                         width: 180px;
+//                         height: 255px;
+//                         border-radius: 40px;
+//                         position: absolute;
+//                         top: 86px;
+//                         left: 90px;
+//                     }
+//                 }
+//             }
+
+//             .home-content-right {
+//                 // display: none;
+
+//                 // background-color: aqua;
+//                 .user-name {
+//                     font-family: 'Roboto', sans-serif;
+//                     color: white;
+//                     padding-top: 135px;
+//                     text-align: center;
+//                     font-size: 80px;
+//                 }
+
+//                 .user-role {
+//                     text-align: center;
+//                     font-size: 28px;
+//                     color: gold;
+//                     font-family: 'Poppins', sans-serif;
+//                 }
+
+//                 .user-desc {
+//                     width: 530px;
+//                     padding-left: 110px;
+//                     font-size: 22px;
+//                     padding-top: 32px;
+//                     font-family: "Poppins", sans-serif;
+//                 }
+//             }
+//         }
+
+//         .foooter-icon {
+//             position: absolute;
+//             bottom: -42px;
+//             right: 0px;
+//         }
+//     }
+// }
