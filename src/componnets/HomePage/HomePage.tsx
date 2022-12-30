@@ -44,9 +44,9 @@ export const HomePage = () => {
             clean & user‑friendly experiences, I am passionate about building excellent
             software that improves the lives of those around me.
           </div>
-          <div className="more-more-button">
+          {/* <div className="more-more-button">
             <button className="more-about-me">More About Me</button>
-          </div>
+          </div> */}
         </div>
       </div>
 

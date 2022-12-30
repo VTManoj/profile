@@ -412,8 +412,7 @@
                     top: 0px;
                     font-size: 60px;
                     text-align: center;
-                    left: 26px;
-
+                    left: 43px;
                 }
             }
 
@@ -513,25 +512,28 @@
                                 font-weight: bold;
                             }
                         }
-
                         .years-of-exp {
                             display: block;
                             margin-right: unset;
                             margin-top: unset;
+                            user-select: none;
                         }
 
                         .project-completed {
                             display: block;
+                            user-select: none;
                         }
 
                         .happy-customers {
                             display: block;
-                            margin-top: 40px;
+                            margin-top: 30px;
                             margin-right: unset;
-                        }
+                            user-select: none;
 
+                        }
                         .awards-won {
                             display: block;
+                            user-select: none;
                         }
                     }
                 }
